@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Blog on ExampleSite</title>
+    <link>http://localhost:1313/categories/blog/</link>
+    <description>Recent content in Blog on ExampleSite</description>
+    <image>
+      <title>ExampleSite</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基于卷积神经网络的图像降噪方法研究(Image Denoising Based on Convolutional Neural Networks)</title>
+      <link>http://localhost:1313/posts/2026-01-22-blog-imgdeno-cnn/</link>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2026-01-22-blog-imgdeno-cnn/</guid>
+      <description>&lt;h2 id=&#34;1-background&#34;&gt;1. Background&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为什么会想到做这样一个实验尝试？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这是我 2025年秋季学期通识课程的作业(课程为：人工神经网络与深度学习基础)&lt;/p&gt;
+&lt;p&gt;实话说，大一上的课程有一半左右都是水课（上课不听的那种），还有四分之一是公共课（得好好学，考试重要），剩下的仅有的两门：计算机科学与技术导论、人工神经网络与深度学习基础，在陌生的城市，带着一颗低落的心，这两门是仅有的能让我提起兴趣，给我带来快乐感的课。&lt;/p&gt;
+&lt;p&gt;……&lt;/p&gt;
+&lt;p&gt;摄影、计算机技术能摩擦出怎样的火花？我十分好奇，也十分有兴趣。&lt;/p&gt;
+&lt;p&gt;无聊的我开始了和ChatGPT的对话，我在和他构建由这两个方向共同撑起的世界，我发现当你认真自己思考事情，遇到了一些小的、和事情本身关联性不大的能力型(?)困难时，AI就是这样一个，高质量的工具。有些难以表达这种感受，比如在构建，思考摄影、技术结合的未来可能性这件事上，我自己完全可以一步一步花时间深挖、思考、记录、补充，但在用上AI后，这件事情的做法就出现了变化，brainstorm的过程变成了和一个能理解你的朋友交流的过程，他是一个能理解你，知道你意思的朋友（虽然很多时候是不能知道的，但可以归结于自己的表达能力不够），在和他沟通的时候，他又能帮你记录下这一切，你只需要口述，我还尝试让他一直提醒我，让我别忘了这一切蓝图前景，让我保持激情，同时为我的生活提供动力，但是很遗憾，他不能跳出对话框。&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;和ChatGPT的聊天&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/ImgDeno-CNN/ChatGPT.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;回归正题，当通识课布置出一个&lt;strong&gt;期末小论文&lt;/strong&gt;这样的作业的时候，我是有些没头绪的，甚至有些担心会不会就这样水过去了。还好，我找到了一个有趣的题材；幸好，我有足够的兴趣研究这件事情；更好，课上学的Matlab以及知识点确实能帮助我进一步了解我感兴趣的影像领域，这不是在应付作业，或者说，这个实验的根本目的甚至不是为了完成这样一个期末任务，而是一次我自己的探索。这是我想象中课程学习价值的最正确的兑现形式。&lt;/p&gt;
+&lt;p&gt;计导课也给了我很大的启发，课上提到了CV相关的内容，让我知道了很多基础的图像后期处理操作都是通过卷积的方式，比如锐化、模糊等等，对于这些底层的技术内容有了更深一步的了解，那节课提到这一点的那页PPT简直让我醍醐灌顶！！&lt;/p&gt;
+&lt;p&gt;拓宽CNN传统情况中的&lt;strong&gt;数据&lt;/strong&gt;对&lt;strong&gt;标签&lt;/strong&gt;形式&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;是否能打破传统局限思考，让&lt;strong&gt;数据&lt;/strong&gt;和&lt;strong&gt;标签&lt;/strong&gt;形式一致？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;带着这样的思考，我的脑中跳出了由高噪点图像到低噪点图像的对应。这一种独特的&lt;strong&gt;映射关系&lt;/strong&gt;，不正是符合CNN吗？&lt;/p&gt;
+&lt;p&gt;当然，有了想法之后，是时候开始思考可行性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;高噪点和低噪点之间的关系是否能找到规律？&lt;/li&gt;
+&lt;li&gt;不同环境下的情况怎么办？&lt;/li&gt;
+&lt;li&gt;噪点产生的原因有多种，合理性？&lt;/li&gt;
+&lt;li&gt;……&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;从这些角度来看，这样一个实验似乎完完全全是不成熟的，但又何妨？Just do it.&lt;/p&gt;
+&lt;p&gt;抱着多多少少能得到一些收获的心态，我开始了实验。&lt;/p&gt;
+&lt;h2 id=&#34;2-lets-do-it&#34;&gt;2. Let&amp;rsquo;s do it!&lt;/h2&gt;
+&lt;p&gt;由于具体、正式的内容已经在&lt;a href=&#34;http://localhost:1313/essays/%E5%9F%BA%E4%BA%8E%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%9A%84%E5%9B%BE%E5%83%8F%E9%99%8D%E5%99%AA%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6.pdf&#34;&gt;论文(自己玩玩的)&lt;/a&gt;中较为完整地给出，本文章只会做我想留下的补充，做记录和复盘用途。
+&lt;del&gt;翻译：想到啥说啥&lt;/del&gt;&lt;/p&gt;
+&lt;h3 id=&#34;整体思路流程&#34;&gt;整体思路流程&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文所提出的图像降噪方法流程主要包括数据采集与预处理、卷积神经网络模型构建、模型训练以及图像仿真预测四个阶段。首先，在暗光环境下固定拍摄场景，分别使用&lt;code&gt;高 ISO&lt;/code&gt; 与&lt;code&gt;低 ISO&lt;/code&gt; 参数获取成对图像数据。随后，对图像进行裁剪并划分为固定大小的图像&lt;code&gt;patch&lt;/code&gt;，构建训练样本。接着，设计并训练卷积神经网络模型，使其学习高噪声图像到低噪声图像之间的&lt;code&gt;映射关系&lt;/code&gt;。最后，将训练完成的模型应用于完整图像的降噪处理，实现仿真预测。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;首先是数据集的准备&#34;&gt;首先是数据集的准备：&lt;/h4&gt;
+&lt;p&gt;在答辩时，老师问我：这些高低噪点的图像都是你自己准备的吗？
+我的第一反应是“不然呢？”
+而思考之后，这句话也让我意识到了很多东西：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对于我一个玩摄影的来说，准备这些数据集完全不是问题，但并不是所有人都这样，应该说大部分人不会有对这方面垂直的了解，当然，也从另一方面说明了我的选题合理与贴合性：
+&lt;blockquote&gt;
+&lt;p&gt;为了获取真实的图像噪声数据，本文在暗光环境下使用相机对同一场景进行多次拍摄，分别设置&lt;code&gt;高 ISO （ISO 12800）&lt;/code&gt;和&lt;code&gt;低 ISO （ISO 100）&lt;/code&gt;参数。&lt;code&gt;高 ISO 图像&lt;/code&gt;由于感光度较高，包含较多噪声信息，而&lt;code&gt;低 ISO 图像&lt;/code&gt;则相对清晰，噪声较少。为了保证除了噪点信息差异外，图像内容不存在偏差，在调整 ISO 时同时调整快门速度，确保画面曝光一致。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;通过从老师的角度思考这句话，我了解到了在对于神经网络的应用里，&lt;strong&gt;数据&lt;/strong&gt;的重要性，如ImageNet的存在同样说明了这一点，在AI时代，除了底层算法逻辑的改动之外，能比拼出差距的地方就在于：数据、算力——又联想到内存的断供、电力行业的蓬勃前景&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;高 ISO 与低 ISO 图像对比示例:
+&lt;img alt=&#34;1&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/ImgDeno-CNN/Compare1.png&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;数据预处理与patch切分&#34;&gt;数据预处理与Patch切分&lt;/h4&gt;
+&lt;p&gt;这一步骤是我自己没有构想出来的，源于ChatGPT为我设计的实验思路，学习了&lt;/p&gt;
+&lt;p&gt;图像 Patch 切分示意图:
+&lt;img alt=&#34;2&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/ImgDeno-CNN/PatchDemo.png&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;卷积神经网络模型构建与训练&#34;&gt;卷积神经网络模型构建与训练&lt;/h4&gt;
+&lt;p&gt;网络结构如下：
+&lt;img alt=&#34;3&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/ImgDeno-CNN/net.png&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文所采用的卷积神经网络由多层卷积层和非线性激活层组成。网络输入为大小为 &lt;code&gt;64 × 64 × 3&lt;/code&gt; 的 RGB 图像 &lt;code&gt;patch&lt;/code&gt;，输出为对应的降噪图像&lt;code&gt;patch&lt;/code&gt;。网络整体由三层卷积层和非线性激活层构成，卷积核大小均为 &lt;code&gt;3 × 3&lt;/code&gt;，并采用相同填充（same padding）方式以保持特征图尺寸不变。
+在网络结构中，前两层卷积层的通道数设置为 &lt;code&gt;32&lt;/code&gt;，并在每一层卷积后引入&lt;code&gt;ReLU&lt;/code&gt;激活函数，以增强网络的非线性表达能力。最后一层卷积层将特征映射回&lt;code&gt;3&lt;/code&gt;个通道，用于&lt;strong&gt;重建&lt;/strong&gt; RGB 彩色图像。由于图像降噪任务属于回归问题，网络输出直接与低 ISO 图像进行比较，并采用回归损失函数进行优化。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quote</title>
+      <link>http://localhost:1313/posts/2025-11-28-post-quote/</link>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-11-28-post-quote/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Bertrand Russell Quote&#34; loading=&#34;lazy&#34; src=&#34;https://www.brainyquote.com/photos_tr/en/b/bertrandrussell/383143/bertrandrussell1-2x.jpg&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A good life is one inspired by love and guided by knowledge. 好的生活，由爱激扬、由知识引导。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;cite&gt;&lt;a href=&#34;https://www.brainyquote.com/quotes/bertrand_russell_383143&#34;&gt;Bertrand Russell&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img alt=&#34;A rose by any other name would smell as sweet&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/a-rose-by-any-other-name-would-smell-as-sweet.webp&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A rose by any other name would smell as sweet.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>
