@@ -1,4 +1,4 @@
-baseURL: "https://jackthin.pages.dev/"
+baseURL: "https://jackthinblog.vercel.app/"
 title: ExampleSite
 pagination:
   pagerSize: 5
