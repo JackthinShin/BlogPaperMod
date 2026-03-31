@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>实验报告 on ExampleSite</title>
-    <link>http://localhost:1313/tags/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</link>
+    <link>https://jackthinblog.vercel.app/tags/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</link>
     <description>Recent content in 实验报告 on ExampleSite</description>
     <image>
       <title>ExampleSite</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://jackthinblog.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://jackthinblog.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 28 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jackthinblog.vercel.app/tags/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>计导试验报告6</title>
-      <link>http://localhost:1313/posts/2025-11-28-cs-test-6/</link>
+      <link>https://jackthinblog.vercel.app/posts/2025-11-28-cs-test-6/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2025-11-28-cs-test-6/</guid>
+      <guid>https://jackthinblog.vercel.app/posts/2025-11-28-cs-test-6/</guid>
       <description>&lt;h1 id=&#34;实验-6-排序算法&#34;&gt;&lt;center&gt; 实验 6 排序算法 &lt;center&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;&lt;center&gt;计算机类3班 施家鑫 25020007105&lt;/center&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;content&#34;&gt;Content&lt;/h2&gt;

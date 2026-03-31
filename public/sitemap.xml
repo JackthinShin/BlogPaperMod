@@ -2,91 +2,91 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://jackthinblog.vercel.app/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/first/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/first/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://jackthinblog.vercel.app/posts/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/first/</loc>
+    <loc>https://jackthinblog.vercel.app/posts/first/</loc>
     <lastmod>2026-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/25%E7%A7%8B%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E8%90%A5/</loc>
+    <loc>https://jackthinblog.vercel.app/categories/25%E7%A7%8B%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E8%90%A5/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2026-03-07-note-dl-3/</loc>
+    <loc>https://jackthinblog.vercel.app/posts/2026-03-07-note-dl-3/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://jackthinblog.vercel.app/categories/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/colab/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/colab/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mobilenet/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/mobilenet/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/note/</loc>
+    <loc>https://jackthinblog.vercel.app/categories/note/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/pytorch/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/pytorch/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/shufflenet/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/shufflenet/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2026-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/blog/</loc>
+    <loc>https://jackthinblog.vercel.app/categories/blog/</loc>
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cnn/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/cnn/</loc>
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E5%9B%BE%E5%83%8F%E9%99%8D%E5%99%AA/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/%E5%9B%BE%E5%83%8F%E9%99%8D%E5%99%AA/</loc>
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2026-01-22-blog-imgdeno-cnn/</loc>
+    <loc>https://jackthinblog.vercel.app/posts/2026-01-22-blog-imgdeno-cnn/</loc>
     <lastmod>2026-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-12-12-note-dl-2/</loc>
+    <loc>https://jackthinblog.vercel.app/posts/2025-12-12-note-dl-2/</loc>
     <lastmod>2025-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-12-02-note-dl-1/</loc>
+    <loc>https://jackthinblog.vercel.app/posts/2025-12-02-note-dl-1/</loc>
     <lastmod>2025-12-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/coursework/</loc>
+    <loc>https://jackthinblog.vercel.app/categories/coursework/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/post-formats/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/post-formats/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-11-28-post-quote/</loc>
+    <loc>https://jackthinblog.vercel.app/posts/2025-11-28-post-quote/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/quote/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/quote/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/2025-11-28-cs-test-6/</loc>
+    <loc>https://jackthinblog.vercel.app/posts/2025-11-28-cs-test-6/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA/</loc>
+    <loc>https://jackthinblog.vercel.app/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AF%BC%E8%AE%BA/</loc>
     <lastmod>2025-11-28T00:00:00+00:00</lastmod>
   </url>
 </urlset>
