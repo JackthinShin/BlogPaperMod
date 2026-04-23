@@ -1,6 +1,6 @@
 ---
 title: "Unitree Go 2 开发日志1：初步调试"
-date: 2026-04-01
+date: 2026-04-08
 draft: false
 categories:
   - Blog

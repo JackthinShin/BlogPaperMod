@@ -11,15 +11,14 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jackthinblog.vercel.app/tags/mqtt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unitree Go 2 开发日志1：初步调试</title>
-      <link>https://jackthinblog.vercel.app/posts/2026-04-01-blog-unitree-go2-devlog-1/</link>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://jackthinblog.vercel.app/posts/2026-04-01-blog-unitree-go2-devlog-1/</guid>
-      <description>&lt;h1 id=&#34;unitree-go-2-开发日志1初步调试&#34;&gt;Unitree Go 2 开发日志1：初步调试&lt;/h1&gt;
-&lt;h2 id=&#34;今日记录&#34;&gt;今日记录&lt;/h2&gt;
+      <link>https://jackthinblog.vercel.app/posts/2026-04-08-blog-unitree-go2-devlog-1/</link>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://jackthinblog.vercel.app/posts/2026-04-08-blog-unitree-go2-devlog-1/</guid>
+      <description>&lt;h2 id=&#34;今日记录&#34;&gt;今日记录&lt;/h2&gt;
 &lt;h3 id=&#34;参考网页&#34;&gt;参考网页：&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://support.unitree.com/home/zh/developer/module_update#heading-3&#34;&gt;拓展坞模块配置开发指南&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://support.unitree.com/home/zh/developer/SLAM%20and%20Navigation_service#heading-6&#34;&gt;SLAM导航服务接口开发指南&lt;/a&gt;&lt;/p&gt;
