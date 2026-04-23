@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jackthinblog.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://jackthinblog.vercel.app/categories/blog/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://jackthinblog.vercel.app/categories/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Note</title>
+      <link>https://jackthinblog.vercel.app/categories/note/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://jackthinblog.vercel.app/categories/note/</guid>
+      <description></description>
+    </item>
     <item>
       <title>25秋深度学习训练营</title>
       <link>https://jackthinblog.vercel.app/categories/25%E7%A7%8B%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E8%90%A5/</link>
@@ -21,21 +35,7 @@
       <description></description>
     </item>
     <item>
-      <title>Note</title>
-      <link>https://jackthinblog.vercel.app/categories/note/</link>
-      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://jackthinblog.vercel.app/categories/note/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Blog</title>
-      <link>https://jackthinblog.vercel.app/categories/blog/</link>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://jackthinblog.vercel.app/categories/blog/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CourseWork</title>
+      <title>Coursework</title>
       <link>https://jackthinblog.vercel.app/categories/coursework/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
       <guid>https://jackthinblog.vercel.app/categories/coursework/</guid>

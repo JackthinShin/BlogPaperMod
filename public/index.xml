@@ -11,14 +11,59 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jackthinblog.vercel.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test post on Hugo</title>
-      <link>https://jackthinblog.vercel.app/posts/first/</link>
-      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://jackthinblog.vercel.app/posts/first/</guid>
-      <description>Desc Text.</description>
+      <title>Unitree Go 2 开发日志1：初步调试</title>
+      <link>https://jackthinblog.vercel.app/posts/2026-04-01-blog-unitree-go2-devlog-1/</link>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://jackthinblog.vercel.app/posts/2026-04-01-blog-unitree-go2-devlog-1/</guid>
+      <description>&lt;h1 id=&#34;unitree-go-2-开发日志1初步调试&#34;&gt;Unitree Go 2 开发日志1：初步调试&lt;/h1&gt;
+&lt;h2 id=&#34;今日记录&#34;&gt;今日记录&lt;/h2&gt;
+&lt;h3 id=&#34;参考网页&#34;&gt;参考网页：&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://support.unitree.com/home/zh/developer/module_update#heading-3&#34;&gt;拓展坞模块配置开发指南&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://support.unitree.com/home/zh/developer/SLAM%20and%20Navigation_service#heading-6&#34;&gt;SLAM导航服务接口开发指南&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1kyymYWENd/&#34;&gt;Go2开发教学10-SLAM 导航服务接口&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;网络配置&#34;&gt;网络配置&lt;/h3&gt;
+&lt;p&gt;将&lt;strong&gt;Unitree Go 2机器人&lt;/strong&gt;与路由器通过&lt;strong&gt;有线方式&lt;/strong&gt;配置局域网，因为机器需要以下三个固定IP&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;192.168.123.18&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;拓展坞PC&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;IP&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;192.168.123.20&lt;/span&gt;  &lt;span class=&#34;err&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;雷达IP&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;192.168.123.161&lt;/span&gt; &lt;span class=&#34;err&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;运控PC&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;IP&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;故在路由器控制台将网段更改至&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;192.168.123&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;xxx&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;ping&lt;/code&gt;成功通过&lt;/p&gt;
+&lt;h3 id=&#34;拓展坞模块调试&#34;&gt;拓展坞模块调试&lt;/h3&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;宇树科技官方在2026-04-01发布了新版本拓展坞的固件&lt;/p&gt;
+&lt;p&gt;访问拓展坞模块 &amp;lt;&lt;code&gt;192.168.123.18&lt;/code&gt;&amp;gt; 上传了新拓展坞固件包进行更新&lt;/p&gt;
+&lt;p&gt;通过&lt;code&gt;ssh&lt;/code&gt;连接，配置好雷达类型、YSN参数以及雷达的外参数（即坐标轴相对偏移量）&lt;/p&gt;
+&lt;p&gt;成功运行官方文档中SLAM导航服务接口的功能测试参考例程&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;d9f2738b6db9f10119a3f30b73f7cd0a.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/d9f2738b6db9f10119a3f30b73f7cd0a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;72b0356b2c2eb7e3907baab05e09a623.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/72b0356b2c2eb7e3907baab05e09a623.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;12b4bcf754aa2cdb5504125b4229f1d7.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/12b4bcf754aa2cdb5504125b4229f1d7.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;0c0acdff28ce9d21ee00fc8dabe64729.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/4e037faa-f883-4143-ad18-b2975e553ea9.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;02a088a0f25597b3db329c49da6b8f62.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/bea6f6bd-81ae-4e73-950d-76063679a5f1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;将巡检项目的代码 &amp;lt;&lt;code&gt;unitree_go2_patrol-master.zip&lt;/code&gt;&amp;gt;&lt;/p&gt;
+&lt;p&gt;通过&lt;code&gt;scp&lt;/code&gt;传到机器人拓展坞模块重新编译，并且成功运行&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;854a0dac2b3091c8bcd4a011d98bac9c.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/854a0dac2b3091c8bcd4a011d98bac9c.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;现存问题&#34;&gt;现存问题：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Go 2机器电池问题——已联系返修&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/image%201.png&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;今天尝试通过路由器Wi-Fi无线连接，手机app上一直无法控制连接成功，暂时先使用有线连接的方式。后续调试参考链接：&lt;a href=&#34;https://blog.csdn.net/m0_66387193/article/details/146597919&#34;&gt;有线连接&lt;/a&gt;，&lt;a href=&#34;https://blog.csdn.net/m0_66387193/article/details/149222256&#34;&gt;无线连接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;后续需要用到遥控手柄，而遥控手柄也存在问题，无法充上电&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;后续安排&#34;&gt;后续安排&lt;/h2&gt;
+&lt;p&gt;基本的配置调试已做好，接下来先进行代码侧的开发，学习&lt;code&gt;MQTT&lt;/code&gt;协议、SLAM等相关内容&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Move Constructor 学习记录</title>
+      <link>https://jackthinblog.vercel.app/posts/2026-03-31-note-move-constructor/</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://jackthinblog.vercel.app/posts/2026-03-31-note-move-constructor/</guid>
+      <description></description>
     </item>
     <item>
       <title>25秋深度学习训练营-第3周：MobileNet_ShuffleNet</title>
@@ -29,7 +74,7 @@
 &lt;h2 id=&#34;11-mobilenet-v1--v2&#34;&gt;1.1 MobileNet V1 &amp;amp; V2&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;MobileNet_V1_V2⽹络讲解 &lt;a href=&#34;https://www.bilibili.com/video/BV1yE411p7L7/&#34;&gt;https://www.bilibili.com/video/BV1yE411p7L7/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;参考PPT &lt;a href=&#34;../assets/ppt/mobilenet.pdf&#34;&gt;mobilenet.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;参考PPT &lt;a href=&#34;https://jackthinblog.vercel.app/ppt/mobilenet.pdf&#34;&gt;mobilenet.pdf&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;传统卷积神经网络，内存需求大、运算量大
 导致无法在移动设备以及嵌入式设备上运行&lt;/p&gt;
@@ -40,18 +85,18 @@
 &lt;li&gt;增加超参数α、β&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;传统卷积：
-&lt;img alt=&#34;传统卷积&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/../assets/images/DL-3/image.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;传统卷积&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/DL-3/image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;DW(Depthwise)卷积：
-&lt;img alt=&#34;DW(Depthwise)卷积&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/../assets/images/DL-3/image-1.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;DW(Depthwise)卷积&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/DL-3/image-1.png&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;计算量比较&#34;&gt;计算量比较&lt;/h4&gt;
 &lt;p&gt;传统卷积
-&lt;img alt=&#34;传统&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/../assets/images/DL-3/image-3.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;传统&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/DL-3/image-3.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;总计算量为：&lt;/p&gt;
 &lt;p&gt;$$
 D_K·D_K·M·N·D_F·D_F
 $$&lt;/p&gt;
 &lt;p&gt;MobileNetV1 DW+PW卷积
-&lt;img alt=&#34;DW+PW&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/../assets/images/DL-3/image-2.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;DW+PW&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/DL-3/image-2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;总计算量为：
 $$
 D_K·D_K·M·D_F·D_F+M·N·D_F·D_F
@@ -100,11 +145,12 @@ $$&lt;/p&gt;</description>
 我的第一反应是“不然呢？”
 而思考之后，这句话也让我意识到了很多东西：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;对于我一个玩摄影的来说，准备这些数据集完全不是问题，但并不是所有人都这样，应该说大部分人不会有对这方面垂直的了解，当然，也从另一方面说明了我的选题合理与贴合性：
+&lt;li&gt;对于我一个玩摄影的来说，准备这些数据集完全不是问题，但并不是所有人都这样，应该说大部分人不会有对这方面垂直的了解，当然，也从另一方面说明了我的选题合理与贴合性：&lt;/li&gt;
+&lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;为了获取真实的图像噪声数据，本文在暗光环境下使用相机对同一场景进行多次拍摄，分别设置&lt;code&gt;高 ISO （ISO 12800）&lt;/code&gt;和&lt;code&gt;低 ISO （ISO 100）&lt;/code&gt;参数。&lt;code&gt;高 ISO 图像&lt;/code&gt;由于感光度较高，包含较多噪声信息，而&lt;code&gt;低 ISO 图像&lt;/code&gt;则相对清晰，噪声较少。为了保证除了噪点信息差异外，图像内容不存在偏差，在调整 ISO 时同时调整快门速度，确保画面曝光一致。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;/li&gt;
+&lt;ul&gt;
 &lt;li&gt;通过从老师的角度思考这句话，我了解到了在对于神经网络的应用里，&lt;strong&gt;数据&lt;/strong&gt;的重要性，如ImageNet的存在同样说明了这一点，在AI时代，除了底层算法逻辑的改动之外，能比拼出差距的地方就在于：数据、算力——又联想到内存的断供、电力行业的蓬勃前景&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;高 ISO 与低 ISO 图像对比示例:
@@ -303,9 +349,9 @@ Best Test Accuracy: 99.08%
     </item>
     <item>
       <title>Quote</title>
-      <link>https://jackthinblog.vercel.app/posts/2025-11-28-post-quote/</link>
+      <link>https://jackthinblog.vercel.app/posts/2025-11-28-blog-quote/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://jackthinblog.vercel.app/posts/2025-11-28-post-quote/</guid>
+      <guid>https://jackthinblog.vercel.app/posts/2025-11-28-blog-quote/</guid>
       <description>&lt;p&gt;&lt;img alt=&#34;Bertrand Russell Quote&#34; loading=&#34;lazy&#34; src=&#34;https://www.brainyquote.com/photos_tr/en/b/bertrandrussell/383143/bertrandrussell1-2x.jpg&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;A good life is one inspired by love and guided by knowledge. 好的生活，由爱激扬、由知识引导。&lt;/p&gt;
@@ -320,37 +366,28 @@ Best Test Accuracy: 99.08%
     </item>
     <item>
       <title>计导试验报告6</title>
-      <link>https://jackthinblog.vercel.app/posts/2025-11-28-cs-test-6/</link>
+      <link>https://jackthinblog.vercel.app/posts/2025-11-28-coursework-cs-test-6/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://jackthinblog.vercel.app/posts/2025-11-28-cs-test-6/</guid>
+      <guid>https://jackthinblog.vercel.app/posts/2025-11-28-coursework-cs-test-6/</guid>
       <description>&lt;h1 id=&#34;实验-6-排序算法&#34;&gt;&lt;center&gt; 实验 6 排序算法 &lt;center&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;&lt;center&gt;计算机类3班 施家鑫 25020007105&lt;/center&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;content&#34;&gt;Content&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#-%E5%AE%9E%E9%AA%8C-6-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95-&#34;&gt; 实验 6 排序算法 &lt;/a&gt;
-&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#-%E5%AE%9E%E9%AA%8C-6-%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95-&#34;&gt; 实验 6 排序算法 &lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#content&#34;&gt;Content&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#c%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0&#34;&gt;C语言实现&lt;/a&gt;
-&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#c%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0&#34;&gt;C语言实现&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#%E7%94%9F%E6%88%90100000%E4%B8%AA%E9%9A%8F%E6%9C%BA%E6%95%B0&#34;&gt;生成100000个随机数&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#%E5%AE%9E%E7%8E%B0%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E5%8A%9F%E8%83%BD&#34;&gt;实现&lt;strong&gt;冒泡排序&lt;/strong&gt;功能&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#%E5%AE%9E%E7%8E%B0%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E5%8A%9F%E8%83%BD&#34;&gt;实现&lt;strong&gt;快速排序&lt;/strong&gt;功能&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#%E5%88%86%E5%88%AB%E8%AE%B0%E5%BD%95%E4%B8%A4%E8%80%85%E6%89%A7%E8%A1%8C%E6%97%B6%E9%97%B4%E5%B9%B6%E8%BF%9B%E8%A1%8C%E6%AF%94%E8%BE%83&#34;&gt;分别记录两者&lt;strong&gt;执行时间&lt;/strong&gt;，并进行&lt;strong&gt;比较&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#%E5%AE%8C%E6%88%90%E4%B8%BB%E7%A8%8B%E5%BA%8F&#34;&gt;完成主程序&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#python%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0&#34;&gt;Python语言实现&lt;/a&gt;
-&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#python%E8%AF%AD%E8%A8%80%E5%AE%9E%E7%8E%B0&#34;&gt;Python语言实现&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#%E7%94%9F%E6%88%90100000%E4%B8%AA%E9%9A%8F%E6%9C%BA%E6%95%B0%E5%88%B0%E6%95%B0%E7%BB%84&#34;&gt;生成100000个随机数到数组&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E5%8A%9F%E8%83%BD&#34;&gt;冒泡排序功能&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E5%8A%9F%E8%83%BD&#34;&gt;快速排序功能&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#%E8%AE%B0%E5%BD%95%E6%89%A7%E8%A1%8C%E6%97%B6%E9%97%B4%E5%B9%B6%E8%BF%9B%E8%A1%8C%E6%AF%94%E8%BE%83&#34;&gt;记录执行时间并进行比较&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#%E4%B8%BB%E7%A8%8B%E5%BA%8F&#34;&gt;主程序&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%96%87%E6%A1%A3%E7%9A%84%E6%92%B0%E5%86%99&#34;&gt;关于本文档的撰写&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;c语言实现&#34;&gt;C语言实现&lt;/h2&gt;
 &lt;blockquote&gt;
