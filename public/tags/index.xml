@@ -11,8 +11,36 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jackthinblog.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ascend</title>
+      <link>https://jackthinblog.vercel.app/tags/ascend/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://jackthinblog.vercel.app/tags/ascend/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CANN</title>
+      <link>https://jackthinblog.vercel.app/tags/cann/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://jackthinblog.vercel.app/tags/cann/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sigmoid</title>
+      <link>https://jackthinblog.vercel.app/tags/sigmoid/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://jackthinblog.vercel.app/tags/sigmoid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>算子开发</title>
+      <link>https://jackthinblog.vercel.app/tags/%E7%AE%97%E5%AD%90%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://jackthinblog.vercel.app/tags/%E7%AE%97%E5%AD%90%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Mqtt</title>
       <link>https://jackthinblog.vercel.app/tags/mqtt/</link>

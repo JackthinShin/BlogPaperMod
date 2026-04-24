@@ -11,8 +11,52 @@
     </image>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jackthinblog.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ascend C算子开发能力认证（中级）：Sigmoid算子实现</title>
+      <link>https://jackthinblog.vercel.app/posts/2026-04-23-blog-ascendc-certivicate/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://jackthinblog.vercel.app/posts/2026-04-23-blog-ascendc-certivicate/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;参考资料（用于学习与核对）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.csdn.net/Maxwell_Newton/article/details/149690331&#34;&gt;Ascend C算子开发能力认证（中级）Sigmoid算子的实现（外部参考）&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这篇文章记录的是我在 Ascend C 中级认证 Sigmoid 题目上的完整实践过程，包含环境准备、实现要点、常见坑位和可复现代码，方便后来者少走弯路。&lt;/p&gt;
+&lt;h2 id=&#34;环境搭建要求&#34;&gt;环境搭建要求&lt;/h2&gt;
+&lt;p&gt;环境需满足以下条件：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;设备需具备昇腾 NPU。&lt;/li&gt;
+&lt;li&gt;CANN 版本需为 &lt;code&gt;8.0.0.beta1&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;环境由开发者自行准备。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;典型场景举例（若指导文档中的 CANN 版本号与 &lt;code&gt;8.0.0.beta1&lt;/code&gt; 不一致，请自行调整）：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;开发者套件（Atlas200I DK A2，或香橙派）部署方式：
+&lt;a href=&#34;https://obs-9be7.obs.cn-east-2.myhuaweicloud.com/resource/Atlas%20200I%20DK%20A2%E7%AE%97%E5%AD%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%8C%87%E5%AF%BC-Ascendc%E4%B8%AD%E7%BA%A7%E8%AE%A4%E8%AF%81%E4%B8%93%E7%94%A8.docx&#34;&gt;Atlas 200I DK A2算子开发环境搭建指导-Ascendc中级认证专用.docx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;华为云 ModelArts Notebook 部署方式：
+&lt;a href=&#34;https://public-download.obs.cn-east-2.myhuaweicloud.com/%E5%BE%AE%E8%AE%A4%E8%AF%81/%E5%8D%8E%E4%B8%BA%E4%BA%91Ascend%20C%E7%AE%97%E5%AD%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%89%8B%E5%86%8C%E5%BE%AE%E8%AE%A4%E8%AF%810611.docx&#34;&gt;华为云Ascend C算子开发环境搭建手册（微认证）.docx&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;题目说明&#34;&gt;题目说明&lt;/h2&gt;
+&lt;p&gt;题目要求实现 Ascend C 算子 Sigmoid，算子命名为 &lt;code&gt;SigmoidCustom&lt;/code&gt;，需要完成：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;kernel 侧代码。&lt;/li&gt;
+&lt;li&gt;host 侧代码。&lt;/li&gt;
+&lt;li&gt;aclnn 算子调用测试。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;相关算法：&lt;/p&gt;
+&lt;p&gt;$$
+sigmoid(x) = \frac{1}{1 + exp(-x)}
+$$&lt;/p&gt;
+&lt;p&gt;具体要求：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;完成 Sigmoid 算子 kernel 侧核函数相关代码补齐。&lt;/li&gt;
+&lt;li&gt;完成 Sigmoid 算子 host 侧 Tiling 结构体成员变量创建，以及 Tiling 实现函数补齐。&lt;/li&gt;
+&lt;li&gt;支持 Float16 类型输入输出。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;代码工程与下载&#34;&gt;代码工程与下载&lt;/h2&gt;
+&lt;p&gt;下载文件：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Unitree Go 2 开发日志1：初步调试</title>
       <link>https://jackthinblog.vercel.app/posts/2026-04-08-blog-unitree-go2-devlog-1/</link>
