@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Robot on ExampleSite</title>
-    <link>https://jackthinblog.vercel.app/tags/robot/</link>
+    <link>https://blog.photoflife.site/tags/robot/</link>
     <description>Recent content in Robot on ExampleSite</description>
     <image>
       <title>ExampleSite</title>
-      <url>https://jackthinblog.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://jackthinblog.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://blog.photoflife.site/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.photoflife.site/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jackthinblog.vercel.app/tags/robot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.photoflife.site/tags/robot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unitree Go 2 开发日志1：初步调试</title>
-      <link>https://jackthinblog.vercel.app/posts/2026-04-08-blog-unitree-go2-devlog-1/</link>
+      <link>https://blog.photoflife.site/posts/2026-04-08-blog-unitree-go2-devlog-1/</link>
       <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://jackthinblog.vercel.app/posts/2026-04-08-blog-unitree-go2-devlog-1/</guid>
+      <guid>https://blog.photoflife.site/posts/2026-04-08-blog-unitree-go2-devlog-1/</guid>
       <description>&lt;h2 id=&#34;今日记录&#34;&gt;今日记录&lt;/h2&gt;
 &lt;h3 id=&#34;参考网页&#34;&gt;参考网页：&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://support.unitree.com/home/zh/developer/module_update#heading-3&#34;&gt;拓展坞模块配置开发指南&lt;/a&gt;&lt;/p&gt;
@@ -32,24 +32,24 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;192.168.123&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;xxx&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;ping&lt;/code&gt;成功通过&lt;/p&gt;
 &lt;h3 id=&#34;拓展坞模块调试&#34;&gt;拓展坞模块调试&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/image.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://blog.photoflife.site/images/unitree-go2-devlog-1/image.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;宇树科技官方在2026-04-01发布了新版本拓展坞的固件&lt;/p&gt;
 &lt;p&gt;访问拓展坞模块 &amp;lt;&lt;code&gt;192.168.123.18&lt;/code&gt;&amp;gt; 上传了新拓展坞固件包进行更新&lt;/p&gt;
 &lt;p&gt;通过&lt;code&gt;ssh&lt;/code&gt;连接，配置好雷达类型、YSN参数以及雷达的外参数（即坐标轴相对偏移量）&lt;/p&gt;
 &lt;p&gt;成功运行官方文档中SLAM导航服务接口的功能测试参考例程&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;d9f2738b6db9f10119a3f30b73f7cd0a.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/d9f2738b6db9f10119a3f30b73f7cd0a.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;72b0356b2c2eb7e3907baab05e09a623.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/72b0356b2c2eb7e3907baab05e09a623.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;12b4bcf754aa2cdb5504125b4229f1d7.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/12b4bcf754aa2cdb5504125b4229f1d7.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;0c0acdff28ce9d21ee00fc8dabe64729.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/4e037faa-f883-4143-ad18-b2975e553ea9.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;02a088a0f25597b3db329c49da6b8f62.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/bea6f6bd-81ae-4e73-950d-76063679a5f1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;d9f2738b6db9f10119a3f30b73f7cd0a.png&#34; loading=&#34;lazy&#34; src=&#34;https://blog.photoflife.site/images/unitree-go2-devlog-1/d9f2738b6db9f10119a3f30b73f7cd0a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;72b0356b2c2eb7e3907baab05e09a623.png&#34; loading=&#34;lazy&#34; src=&#34;https://blog.photoflife.site/images/unitree-go2-devlog-1/72b0356b2c2eb7e3907baab05e09a623.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;12b4bcf754aa2cdb5504125b4229f1d7.png&#34; loading=&#34;lazy&#34; src=&#34;https://blog.photoflife.site/images/unitree-go2-devlog-1/12b4bcf754aa2cdb5504125b4229f1d7.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;0c0acdff28ce9d21ee00fc8dabe64729.png&#34; loading=&#34;lazy&#34; src=&#34;https://blog.photoflife.site/images/unitree-go2-devlog-1/4e037faa-f883-4143-ad18-b2975e553ea9.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;02a088a0f25597b3db329c49da6b8f62.png&#34; loading=&#34;lazy&#34; src=&#34;https://blog.photoflife.site/images/unitree-go2-devlog-1/bea6f6bd-81ae-4e73-950d-76063679a5f1.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;将巡检项目的代码 &amp;lt;&lt;code&gt;unitree_go2_patrol-master.zip&lt;/code&gt;&amp;gt;&lt;/p&gt;
 &lt;p&gt;通过&lt;code&gt;scp&lt;/code&gt;传到机器人拓展坞模块重新编译，并且成功运行&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;854a0dac2b3091c8bcd4a011d98bac9c.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/854a0dac2b3091c8bcd4a011d98bac9c.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;854a0dac2b3091c8bcd4a011d98bac9c.png&#34; loading=&#34;lazy&#34; src=&#34;https://blog.photoflife.site/images/unitree-go2-devlog-1/854a0dac2b3091c8bcd4a011d98bac9c.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;现存问题&#34;&gt;现存问题：&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Go 2机器电池问题——已联系返修&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://jackthinblog.vercel.app/images/unitree-go2-devlog-1/image%201.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image.png&#34; loading=&#34;lazy&#34; src=&#34;https://blog.photoflife.site/images/unitree-go2-devlog-1/image%201.png&#34;&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;今天尝试通过路由器Wi-Fi无线连接，手机app上一直无法控制连接成功，暂时先使用有线连接的方式。后续调试参考链接：&lt;a href=&#34;https://blog.csdn.net/m0_66387193/article/details/146597919&#34;&gt;有线连接&lt;/a&gt;，&lt;a href=&#34;https://blog.csdn.net/m0_66387193/article/details/149222256&#34;&gt;无线连接&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;后续需要用到遥控手柄，而遥控手柄也存在问题，无法充上电&lt;/li&gt;

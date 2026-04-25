@@ -2,43 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on ExampleSite</title>
-    <link>https://jackthinblog.vercel.app/categories/</link>
+    <link>https://blog.photoflife.site/categories/</link>
     <description>Recent content in Categories on ExampleSite</description>
     <image>
       <title>ExampleSite</title>
-      <url>https://jackthinblog.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://jackthinblog.vercel.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://blog.photoflife.site/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.photoflife.site/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jackthinblog.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.photoflife.site/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>https://jackthinblog.vercel.app/categories/blog/</link>
+      <link>https://blog.photoflife.site/categories/blog/</link>
       <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://jackthinblog.vercel.app/categories/blog/</guid>
+      <guid>https://blog.photoflife.site/categories/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Note</title>
-      <link>https://jackthinblog.vercel.app/categories/note/</link>
+      <link>https://blog.photoflife.site/categories/note/</link>
       <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://jackthinblog.vercel.app/categories/note/</guid>
+      <guid>https://blog.photoflife.site/categories/note/</guid>
       <description></description>
     </item>
     <item>
       <title>25秋深度学习训练营</title>
-      <link>https://jackthinblog.vercel.app/categories/25%E7%A7%8B%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E8%90%A5/</link>
+      <link>https://blog.photoflife.site/categories/25%E7%A7%8B%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E8%90%A5/</link>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://jackthinblog.vercel.app/categories/25%E7%A7%8B%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E8%90%A5/</guid>
+      <guid>https://blog.photoflife.site/categories/25%E7%A7%8B%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AE%AD%E7%BB%83%E8%90%A5/</guid>
       <description></description>
     </item>
     <item>
       <title>Coursework</title>
-      <link>https://jackthinblog.vercel.app/categories/coursework/</link>
+      <link>https://blog.photoflife.site/categories/coursework/</link>
       <pubDate>Fri, 28 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://jackthinblog.vercel.app/categories/coursework/</guid>
+      <guid>https://blog.photoflife.site/categories/coursework/</guid>
       <description></description>
     </item>
   </channel>
